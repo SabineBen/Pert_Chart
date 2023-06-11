@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>work</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-lightbulb"> </i>
+            Pert</a>
+        <nav class="navbar">
+            <a href="">Home</a>
+            <a href="">Services</a>
+            <a href="">Contact</a>
+            <a href="">About</a>
+        </nav>
+        <div class="icons">
+            <!-- <div id="menu-btn" class="fas fa-bars"> -->
+            <div id="user-btn" class="fas fa-user">
+
+
+            </div>
+        </div>
+    </header>
+
+    <div class="formulaire">
+        <div id="close-form" class="fas fa-times"></div>
+        <div class="buttons">
+            <span class="btn active login-btn">login</span>
+            <span class="btn register-btn">register</span>
+        </div>
+        <form action="/" method="POST" class="login-form active">
+            <h3>login now</h3>
+            <input type="name" name="username" placeholder="enter your email" class="box" required>
+            <input type="password" name="password" placeholder="enter your password" class="box" required>
+            <div class="flex">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember me</label>
+                <a href="#">forgot password?</a>
+            </div>
+            <input type="submit" value="login now" class="btn1">
+        </form>
+        <form action="/register" method="POST" class="register-form">
+            <h3>Register now</h3>
+            <input type="name" name="username" placeholder="enter your name" class="box" required>
+            <input type="email" name="usermail" placeholder="enter your email" class="box" required>
+            <input type="password" name="password" placeholder="confirm your password" class="box" required>
+            <input type="submit" value="register now" class="btn1">
+        </form>
+    </div>
+    <section class="home">
+        <div class="home-slider">
+            <div class="w">
+                <section class="slide" style="background: url(img/img3.jpg) no-repeat;">
+
+                    <div class="content">
+                        <h3>to professionalism</h3>
+                        <p>Vous vous lancez dans votre activité, je pense que vous êtes ou que vous avez été confrontez
+                            aux problèmes d'organisation. Vous avez l'impression de perdre du temps, de mal l'organiser,
+                            de ne pas optimiser ce qui peut l'être pour
+                            donner un coup de boost à votre business. Voici comment procéder pour organiser son temps et
+                            ses priorités et pouvoir en faire plus</p>
+                        <a href="#" class="btn"> get started</a>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+:root {
+    --green: #0eb582;
+    --light-green: #f0fdfa;
+    --light-color: #777;
+    --light-white: #eee;
+    --black: #444;
+    --white: #fff;
+    --box-shadaw: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --border: .1rem solid var(--green);
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--green);
+}
+
+section {
+    padding: 5rem 10%;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    border: var(--border);
+    background-color: var(--green);
+    color: var(--light-white);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--light-white);
+    color: var(--green);
+}
+
+.btn1 {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    border: var(--border);
+    background-color: var(--light-white);
+    color: var(--green);
+    cursor: pointer;
+}
+
+.btn1:hover:hover {
+    background: var(--green);
+    color: var(--light-white);
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: var(--white);
+    box-shadow: var(--box-shadaw);
+    padding: 2rem 10%;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.header .logo {
+    margin-right: auto;
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.header .logo i {
+    color: var(--green);
+}
+
+.header .navbar a {
+    margin-right: 2rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.header .navbar a:hover {
+    color: var(--green);
+}
+
+.header .icons {
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-left: 1.5rem;
+}
+
+.header .icons:hover {
+    color: var(--green);
+}
+
+.formulaire {
+    position: fixed;
+    top: 0;
+    right: -105%;
+    width: 35rem;
+    background: var(--white);
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+    justify-content: center;
+    height: 100%;
+    z-index: 1200;
+    text-align: center;
+}
+
+.formulaire.active {
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, .8);
+    right: 0;
+}
+
+.formulaire #close-form {
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 4rem;
+    cursor: pointer;
+    color: var(--black);
+    /* display: none; */
+}
+
+.formulaire #close-form:hover {
+    transform: rotate(90deg);
+}
+
+.formulaire form {
+    border: var(--border);
+    padding: 2rem;
+    display: none;
+}
+
+.formulaire form.active {
+    display: block;
+}
+
+.formulaire h3 {
+    padding-bottom: .5rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.formulaire .box {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    border: var(--border);
+    font-size: 1.6rem;
+    margin: .7rem 0;
+}
+
+.formulaire .flex {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.formulaire .flex label {
+    font-size: 1.5rem;
+    color: var(--light-color);
+    cursor: pointer;
+}
+
+.formulaire .flex a {
+    font-size: 1.5rem;
+    color: var(--light-color);
+    margin-left: auto;
+}
+
+.formulaire .flex a:hover {
+    text-decoration: underline;
+    color: var(--green);
+}
+
+.formulaire .buttons .btn {
+    margin: 0 .5rem;
+}
+
+.formulaire .buttons .btn.active {
+    background: var(--green);
+    color: var(--white);
+}
+
+.home {
+    padding: 0;
+}
+
+.home .slide {
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    background-position: center !important;
+}
+
+.home .slide .content {
+    width: 50rem;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
+        min-height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch; */
+}
+
+.home .slide .content h3 {
+    font-size: 6rem;
+    /* margin-left: 45rem; */
+    text-transform: capitalize;
+    color: var(--white);
+}
+
+.home .slide .content p {
+    padding: 1rem 0;
+    color: var(--light-white);
+    font-size: 1.6rem;
+    line-height: 2;
+}
