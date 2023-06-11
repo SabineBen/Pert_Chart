@@ -8,4 +8,5 @@ CRUD with javascript, nodejs, and mysql 8. List of tasks with javascript, where 
 ### 
 After creating the project, the user can fill in the task table and the PERT diagram below will appear.
 
-
+# Run app
+npm run start
